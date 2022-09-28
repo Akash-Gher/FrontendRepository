@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>form</title>
+    <style>
+        table {
+            border: 3px dashed black;
+            color: aliceblue;
+            background-image: linear-gradient(skyblue, pink);
+        }
+
+        .btn {
+            text-align: center
+        }
+
+        h2 {
+            color: blue;
+            text-decoration-line: underline
+        }
+
+        body {
+            font-weight: bold
+        }
+    </style>
+</head>
+
+<body>
+
+    <center>
+        <form>
+            <h2>Student Registration Form Using Table in HTML</h2>
+            <table style="  height:800px; width:600px;">
+
+                <tr>
+                    <td>First Name </td>
+                    <td colspan="2">
+                        <input type="text" placeholder="Ghanedra"> (Max 50 Characters Allowed)
+                    </td>
+                    <td></td>
+
+                </tr>
+                <tr colspan="2">
+                    <td>Last Name </td>
+                    <td>
+                        <input type="text" placeholder="yadav"> (Max 50 Characters Allowed)
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>Email ID </td>
+                    <td>
+                        <input type="email" placeholder="yghanendra@gmail.com">
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td>Mobile Number </td>
+                    <td colspan="2">
+                        <input type="number" placeholder="yadav"> (10 Digits Allowed )
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>Gender </td>
+                    <td>
+                        <input type="radio" name="gender" id="male">male
+                        <input type="radio" name="gender" id="female">Female
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>Date of Birth(DOB) </td>
+                    <td>
+                        <input type="date">
+
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>Address </td>
+                    <td>
+                        <textarea name="" id="" cols="30" rows="7"></textarea>
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td>City </td>
+                    <td colspan="2">
+                        <input type="text" placeholder="Banglore"> (Max 50 Characters Allowed)
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>Pin Code </td>
+                    <td colspan="2">
+                        <input type="number" placeholder="yadav"> (Max 6 Numbers Allowed)
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>State </td>
+                    <td colspan="2">
+                        <input type="number" placeholder="Karnataka"> (Max 50 Characters Allowed)
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td>Country </td>
+                    <td>
+                        <input type="number" placeholder="India">
+                    </td>
+
+                </tr>
+                <br>
+                <br>
+                <tr>
+                    <td>Hobbies </td>
+                    <td colspan="2">
+                        <input type="checkbox" name="Draaing" id="drawing">drawing
+                        <input type="checkbox" name="" id="">Singing
+                        <input type="checkbox" name="" id="">Dancing
+                        <input type="checkbox" name="" id="">Sketching
+                        <br>
+                        <input type="checkbox" name="" id="">Others
+                        <input type="text" placeholder="Ex-Teaching"> (Max 50 Characters Allowed)
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td>Qualification </td>
+                    <td>
+                        <input type="checkbox" name="" id="">High School(10th)
+                        <br>
+                        <input type="checkbox" name="" id="">Higher School(12th)
+                        <br>
+                        <input type="checkbox" name="" id="">Graduation(Bachelors)
+                        <br>
+                        <input type="checkbox" name="" id="">Post Graduation(Masters)
+                        <br>
+                        <input type="checkbox" name="" id="">Phd
+                        <br>
+
+
+                    </td>
+                    <br>
+
+                </tr>
+                <tr>
+                    <td>Cource Applied For </td>
+                    <td>
+
+                        <input type="radio" name="cource" id="bca">BCA(Bachleor of Computer Applications)
+                        <br>
+                        <input type="radio" name="cource" id="bcom">B.com(Bachleor of Commers)
+                        <br>
+                        <input type="radio" name="cource" id="bsc">B.Sc(Bachleor of Science)
+                        <br>
+                        <input type="radio" name="cource" id="ba">BA(Bachleor of Arts)
+                        <br>
+                        <input type="radio" name="cource" id="mca">MCA(Bachleor of Computer Applications)
+                        <br>
+                        <input type="radio" name="cource" id="mcom">M.Com(Master of Commers)
+                        <br>
+                        <input type="radio" name="cource" id="msc">M.Sc(Bachleor of Science)
+                        <br>
+                        <input type="radio" name="cource" id="ma">MA(Bachleor of Arts)
+                        <br>
+
+
+
+                    </td>
+
+
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td colspan="2" style="margin-left: 20px">
+                        <input class="btn" type="button" value="Submit">
+                        <input class="btn" type="reset" value="Reset">
+                    </td>
+
+                </tr>
+
+            </table>
+        </form>
+    </center>
+</body>
+
+</html>
