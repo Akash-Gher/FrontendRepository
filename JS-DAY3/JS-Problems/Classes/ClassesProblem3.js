@@ -63,10 +63,11 @@ let sweetnessValues = {
   Chocolate: 10,
 };
 
+icecream =new IceCream();
 ice1 = new IceCream("Chocolate", 23);
 ice2 = new IceCream("Vanilla", 10);
 ice3 = new IceCream("Strawberry", 5);
 ice4 = new IceCream("Plain", 7);
 ice5 = new IceCream("ChocolateChip", 18);
 
-console.log(ice5.sweetestIceCream([ice2, ice3, ice4, ice5]));
+console.log(icecream.sweetestIceCream([ice1,ice2, ice3, ice4, ice5]));
