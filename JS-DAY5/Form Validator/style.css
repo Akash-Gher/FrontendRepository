@@ -1,0 +1,14 @@
+.container{
+   
+    background-color: aquamarine;
+    height: 35em;
+    width: 55em;
+      border: 10px solid greenyellow;
+    border-radius: 15px;
+    position: relative;
+  
+}
+
+.btn{
+    
+}

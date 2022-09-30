@@ -1,0 +1,60 @@
+
+.container{
+    text-align: center;
+    background-color: aquamarine;
+    height: 30em;
+    width: 55em;
+    background-image: url('./img/appBG.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    border: 10px solid greenyellow;
+    border-radius: 15px;
+    position: relative;
+    top:70%;
+    left: 20%;
+}
+
+body{
+    background-image: url('./img/bodyBG.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+#result{
+    background-color: gray;
+    color: azure;
+    font-size: larger;
+    font-weight: 800;
+    border-radius: 10px;
+}
+
+#btn{
+    background-color: #4CAF50; /* Green */
+    border: 2px solid pink;
+    margin: 10px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+.labels{
+    font-size: 30px;
+    font-weight: bold;
+    color: while;
+    background-color: antiquewhite;
+    
+}
+.labels1{
+    font-size: 30px;
+    font-weight: bold;
+    color: while;
+   
+}
+
+input{
+    font-size: larger;
+}

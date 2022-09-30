@@ -89,30 +89,6 @@
 // Notice the difference between "tweet" (the setter) and "tweets" (the getter)!
 
 
-// class Person {
-//     #secretMessage = "shhhh!"
-//     constructor(name) {
-//       this.name = name
-//       console.log("I can access the private field!",this.#secretMessage)
-//     }
-//     someClassMethod() {
-//       console.log("And so can I!",this.#secretMessage)
-//     }
-//   }
-  
-
-// //   class Person {
-// //     #myClassArray = []
-// //     constructor(name) {
-// //       this.name = name
-// //     }
-// //     set arrItem(data) {
-// //       this.#myClassArray.push(data)
-// //     }
-// //     get arr() {
-// //       return [...this.#myClassArray]
-// //     }
-// //    }
 class Twitter {
   #password
   #myTweets=[]
