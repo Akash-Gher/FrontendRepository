@@ -56,14 +56,14 @@
 //   #password
 //   constructor(name, password) {
 // 	this.name = name
-//     this.#password = this.encryptMe(password)
+//     this.#password = this.hashed(password)
 //   }
-//   encryptMe(str) {
+//   hashed(str) {
 // 	// assume this encrypts a string
 // 	return encryptedString
 //   }
-//   checkPassword(candidate) {
-// 	return this.encryptMe(candidate) == this.#password
+//   checkPassword(userData) {
+// 	return this.hashed(userData) == this.#password
 //   }
 // }
 // Notice that the #password field is never visible to the outside, and yet we can still use it for authentication!
@@ -84,33 +84,75 @@
 // classInstance.user: the username.
 // classInstance.tweet: The setter for a new tweet.
 // classInstance.tweets: The getter for the list of tweets
-// classInstance.checkPassword(str): Checks a candidate password against the stored password.
+// classInstance.checkPassword(str): Checks a userData password against the stored password.
 // classInstance.password: getter that just returns four asterisks (****)
 // Notice the difference between "tweet" (the setter) and "tweets" (the getter)!
 
 
-class Person {
-    #secretMessage = "shhhh!"
-    constructor(name) {
-      this.name = name
-      console.log("I can access the private field!",this.#secretMessage)
-    }
-    someClassMethod() {
-      console.log("And so can I!",this.#secretMessage)
-    }
-  }
-  
-
-//   class Person {
-//     #myClassArray = []
+// class Person {
+//     #secretMessage = "shhhh!"
 //     constructor(name) {
 //       this.name = name
+//       console.log("I can access the private field!",this.#secretMessage)
 //     }
-//     set arrItem(data) {
-//       this.#myClassArray.push(data)
+//     someClassMethod() {
+//       console.log("And so can I!",this.#secretMessage)
 //     }
-//     get arr() {
-//       return [...this.#myClassArray]
-//     }
-//    }
+//   }
+  
+
+// //   class Person {
+// //     #myClassArray = []
+// //     constructor(name) {
+// //       this.name = name
+// //     }
+// //     set arrItem(data) {
+// //       this.#myClassArray.push(data)
+// //     }
+// //     get arr() {
+// //       return [...this.#myClassArray]
+// //     }
+// //    }
+class Twitter {
+  #password
+  #myTweets=[]
+  constructor(name, password) {
+      this.name = name
+      this.#password = this.hashed(password)
+    }
+
+    hashed(str) {
+      
+      return (this.#password);
+    }
+
+    checkPassword(userData) {
+      return this.hashed(userData) == this.#password
+    }
+
+    set tweet(data) {
+      this.#myTweets.push(data)
+    }
+    get tweets() {
+      return [...this.#myTweets]
+    }
    
+  
+  
+  
+}
+
+let user=new Twitter("akash-gher",9284)
+
+
+if(user.checkPassword(9284)){
+console.log("Valid password");
+}else{
+  console.log("Invalid password");
+}
+
+user.tweet="my very first tweet"
+user.tweet="i Join Ivy comtech as software enigineer"
+user.tweet="Iam on the java training"
+
+console.log(user.tweets);
