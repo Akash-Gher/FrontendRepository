@@ -101,16 +101,16 @@ class Person {
   }
   
 
-  class Person {
-    #myClassArray = []
-    constructor(name) {
-      this.name = name
-    }
-    set arrItem(data) {
-      this.#myClassArray.push(data)
-    }
-    get arr() {
-      return [...this.#myClassArray]
-    }
-   }
+//   class Person {
+//     #myClassArray = []
+//     constructor(name) {
+//       this.name = name
+//     }
+//     set arrItem(data) {
+//       this.#myClassArray.push(data)
+//     }
+//     get arr() {
+//       return [...this.#myClassArray]
+//     }
+//    }
    
