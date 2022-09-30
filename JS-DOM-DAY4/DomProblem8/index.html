@@ -5,73 +5,45 @@ Document.querySelectorAll() - https://developer.mozilla.org/en-US/docs/Web/API/D
 Pseudo-elements - https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements
 Array.prototype.forEach() - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach -->
 
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-        ul::first-line {
-  color: blue;
-  text-transform: uppercase;
-}
-    </style>
-</head>
-<body>
-    
-     <ul>
-        <li> a</li>
-        <li> b</li>
-        <li> c</li>
-     </ul>
+   
+  </head>
+  <body>
+    <ul>
+      <li>a</li>
+      <li>b</li>
+      <li>c</li>
+    </ul>
 
-     <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-     </ul>
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+    </ul>
 
-     <ul>
-        <li>😅</li>
-        <li>👍🏻</li>
-        <li>🙂</li>
-     </ul>
-
+    <ul>
+      <li>😅</li>
+      <li>👍🏻</li>
+      <li>🙂</li>
+    </ul>
 
     <script>
-let ul;
-window.onload = getboldText();
- 
-// Collect all <strong> tags
-function getboldText() 
-{
-  ul = document.getElementsByTagName('ul'); 
-}
+      var arr = document.querySelectorAll("ul");
 
-// ul[0].innerText[0].value="first";
-//ul[0].last-child="last";
+   
+      arr.forEach((element) => {
+      
+        element.firstElementChild.innerText="first";
+        element.lastElementChild.innerText="last";
 
-
-// if ($li.is(':first-child')) {
-//         // First
-//     } else if ($li.is(':last-child')) {
-//         // Last
-//     }
-
-// const array1 = ['a', 'b', 'c'];
-
-// ul.forEach(element => console.log(element));
-
-// // expected output: "a"
-// // expected output: "b"
-// // expected output: "c"
-
-
-
+      })
 
     </script>
-</body>
+  </body>
 </html>
